@@ -26,6 +26,11 @@ place the following in your `config/application.rb` file:
 
     config.quiet_assets = false
 
+To disable some other errors, e.g. missing paperclip files, you can use the following options :
+
+    config.quiet_assets_prefix = /system/
+    config.quiet_assets_level = Logger::UNKNOWN
+
 ## License
 
 Dual licensed under the MIT or GPL licenses:
